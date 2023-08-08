@@ -2,7 +2,7 @@
 
 Quick Wit is a speed reading application that utilizes the Rapid Serial Visual Presentation (RSVP) technique to enhance your reading speed and comprehension. With Quick Wit, you can read through text documents or PDF files at a significantly accelerated pace, allowing you to absorb information more efficiently.
 
-![Quick Wit Logo](assets/quick_wit_logo.png)
+![Quick Wit Logo](https://github.com/easyvansh/QuickWit/blob/main/assets/quick_wit_icon.png)
 
 ## Features
 
@@ -61,7 +61,7 @@ Quick Wit is a speed reading application that utilizes the Rapid Serial Visual P
 
 ## Screenshots
 
-![Quick Wit Screenshot](quick_wit_screenshot.gif)
+![Quick Wit Screenshot](https://github.com/easyvansh/QuickWit/blob/main/assets/quick_wit_screenshot.gif)
 
 ## Contributions
 
