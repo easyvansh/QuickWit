@@ -1,8 +1,25 @@
-# Quick Wit - RSVP Speed Reading Application
+<h1 align="center">
+  Quick Wit
+</h1>
+<div align="center">
+  <p>A Speed Reading Application.</p>
+<img src="https://github.com/easyvansh/QuickWit/blob/main/assets/quick_wit_icon.png" alt="Quick Wit Logo" style="width:200px; height:200px"/>
+</div>
+
 
 Quick Wit is a speed reading application that utilizes the Rapid Serial Visual Presentation (RSVP) technique to enhance your reading speed and comprehension. With Quick Wit, you can read through text documents or PDF files at a significantly accelerated pace, allowing you to absorb information more efficiently.
 
-![Quick Wit Logo](assets/quick_wit_logo.png)
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [License](#license)
+
+- - -
+
+
 
 ## Features
 
@@ -12,7 +29,7 @@ Quick Wit is a speed reading application that utilizes the Rapid Serial Visual P
 - Start, stop, and resume reading functionality.
 - User-friendly graphical user interface (GUI).
 
-## How to Use
+## Getting Started
 
 1. **Load a Document**: Click on the "Load PDF" button to select a PDF file or text document you want to read.
 
@@ -23,6 +40,11 @@ Quick Wit is a speed reading application that utilizes the Rapid Serial Visual P
 4. **Pause and Resume**: While reading, you can pause the process by clicking the "Stop" button. To resume, click the "Resume" button.
 
 5. **Completion and Reset**: The reading process will automatically stop when the document is fully read. You can click the "Load PDF" button again to choose a new document.
+
+<div align="center">
+<img src="https://github.com/easyvansh/QuickWit/blob/main/assets/quick_wit_screenshot.gif" alt="Quick Wit Logo" style="width:800px; height:800px" />
+</div>
+
 
 ## Requirements
 
@@ -58,10 +80,6 @@ Quick Wit is a speed reading application that utilizes the Rapid Serial Visual P
    ```
    python quick_wit.py
    ```
-
-## Screenshots
-
-![Quick Wit Screenshot](quick_wit_screenshot.gif)
 
 ## Contributions
 
