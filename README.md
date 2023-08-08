@@ -15,7 +15,9 @@ Quick Wit is a speed reading application that utilizes the Rapid Serial Visual P
 - [Getting Started](#getting-started)
 - [Requirements](#requirements)
 - [Installation](#installation)
+- [Contributions](#contributions)
 - [License](#license)
+- [Acknowledgments](acknowledgments)
 
 - - -
 
