@@ -42,6 +42,16 @@ class PDFSpeedReaderApp:
         self.resume_button = ttk.Button(root, text="Resume", command=self.resume_reading)
         self.resume_button.pack(pady=10)
         self.resume_button.config(state=tk.DISABLED)
+
+        # Previous button to go back reading after stopping
+        self.previous_button = ttk.Button(root, text="Previous", command=self.previous_reading)
+        self.previous_button.pack(pady=10)
+        self.previous_button.config(state=tk.DISABLED)
+
+        # Next button to go next reading after stopping
+        self.next_button = ttk.Button(root, text="Next", command=self.next_reading)
+        self.next_button.pack(pady=10)
+        self.next_button.config(state=tk.DISABLED)
         
         # Load PDF button
         self.load_pdf_button = ttk.Button(root, text="Load PDF", command=self.load_pdf)
@@ -80,12 +90,43 @@ class PDFSpeedReaderApp:
         self.paused = True
         self.stop_button.config(state=tk.DISABLED)
         self.resume_button.config(state=tk.NORMAL)
+        self.previous_button.config(state=tk.NORMAL)
+        self.next_button.config(state=tk.NORMAL)
         
     def resume_reading(self):
         """Resume the reading process."""
         self.paused = False
         self.resume_button.config(state=tk.DISABLED)
         self.start_reading()
+
+    def previous_reading(self):
+        """Resume the reading process."""
+        self.paused = True
+        self.previous_button.config(state=tk.NORMAL)
+        word = self.words[self.word_index]
+        self.text_label.config(text=word)
+        self.word_index -= 1
+        
+        # Ensure non-zero speed
+        delay = 60.0 / (self.speed + 1e-6)
+        
+        # Update the GUI
+        self.root.update()
+
+    def next_reading(self):
+        """Resume the reading process."""
+        self.paused = True
+        self.next_button.config(state=tk.NORMAL)
+        word = self.words[self.word_index]
+        self.text_label.config(text=word)
+        self.word_index += 1
+        
+        # Ensure non-zero speed
+        delay = 60.0 / (self.speed + 1e-6)
+        
+        # Update the GUI
+        self.root.update()
+        
         
     def start_reading(self):
         """Start the reading process."""
